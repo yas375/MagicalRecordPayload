@@ -1,3 +1,3 @@
 platform :ios
 
-dependency 'MagicalRecord'
+dependency 'MagicalRecord', '2.0.3'

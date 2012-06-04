@@ -13,6 +13,13 @@
 
 @end
 
+@interface NSManagedObjectContext (MagicalRecordInternal)
+
++ (void) MR_cleanUp;
+
+@end
+
+void reset_action_queue(void);
 
 @implementation MagicalRecord
 
@@ -20,6 +27,7 @@
 {
     [self cleanUpErrorHanding];
     [self cleanUpStack];
+    reset_action_queue();
 }
 
 + (void) cleanUpStack;

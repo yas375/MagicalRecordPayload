@@ -1,5 +1,5 @@
 PODS:
-  - MagicalRecord (2.0)
+  - MagicalRecord (2.0.3)
 
 DEPENDENCIES:
-  - MagicalRecord
+  - MagicalRecord (= 2.0.3)

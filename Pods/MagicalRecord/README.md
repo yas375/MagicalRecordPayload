@@ -12,14 +12,31 @@ MagicalRecord was inspired by the ease of Ruby on Rails' Active Record fetching.
 * Allow for clear, simple, one-line fetches
 * Still allow the modification of the NSFetchRequest when request optimizations are needed
 
+
 # Installation
 
-1. In your XCode Project, add all the .h and .m files from the *Source* folder into your project. 
+1. In your XCode Project, drag the *MagicalRecord* folder (under the main folder) into your project. 
 2. Add *CoreData+MagicalRecord.h* file to your PCH file or your AppDelegate file.
-3. Optionally add `#define MR_SHORTHAND` to your PCH file if you want to use shorthand like `findAll` instead of `MR_findAll`
+3. Optionally precees the *CoreData+MagicalRecord.h* import with `#define MR_SHORTHAND` to your PCH file if you want to use MagicalRecord methods without the *MR_prefix* like `findAll` instead of `MR_findAll`
 4. Start writing code!
 
 # Notes
+## Third Party Blog Entries
+The following blog entries highlight how to install and use aspects of Magical Record.
+
+* [How to make Programming with Core Data Pleasant](http://yannickloriot.com/2012/03/magicalrecord-how-to-make-programming-with-core-data-pleasant/)
+* [Using Core Data with MagicalRecord](http://ablfx.com/blog/2012/03/using-coredata-magicalrecord/)
+* [Super Happy Easy Fetching in Core Data](http://www.cimgf.com/2011/03/13/super-happy-easy-fetching-in-core-data/)
+* [Core Data and Threads, without the Headache](http://www.cimgf.com/2011/05/04/core-data-and-threads-without-the-headache/)
+* [Unit Testing with Core Data](http://www.cimgf.com/2012/05/15/unit-testing-with-core-data/)
+
+## Twitter 
+Follow [@MagicalRecord](http://twitter.com/magicalrecord) on twitter to stay up to date on twitter with the lastest updates to MagicalRecord and for basic support
+
+## Updating to 2.0
+
+MagicalRecord 2.0 is considered a major update since there were some class and API refactorings that will effect previous installations of MagicalRecord in your code. The most straight forward change is that *MagicalRecordHelpers* and *MRCoreDataAction* have both been replaced with a single class, *MagicalRecord*.
+
 ## ARC Support
 
 MagicalRecord fully supports ARC out of the box, there is no configuration necessary. 
@@ -27,14 +44,23 @@ The last version to support manually managed memory is 1.8.3, and is available f
 
 ## Nested Contexts
 
-New in Core Data is support for related contexts. This is a super neat, and super fast feature. However, writing a wrapper that supports both is, frankly, more work that it's worth. However, the 1.8.3 version will be the last version that has dual support, and going forward, MagicalRecord will only work with the version of Core Data that has this feature.
+New in Core Data is support for related contexts. This is a super neat, and super fast feature. However, writing a wrapper that supports both is, frankly, more work that it's worth. However, the 1.8.3 version will be the last version that has dual support, and going forward, MagicalRecord will only work with the version of Core Data that has supports nested managed object contexts.
+
+MagicalRecord provides a background saving queue so that saving all data is performed off the main thread, in the background. This means that it may be necessary to use *MR_saveNestedContexts* rather than the typical *MR_save* method in order to persist your changes all the way to your persistent store;
+
+## Logging
+MagicalRecord has logging built in to every fetch request and other Core Data operation. When errors occur when fetching or saving data, these errors are captured by MagicalRecord. By default, these logs use NSLog to present logging information. However, if you have CocoaLumberjack installed in your project, MagicalRecord will use CocoaLumberjack and it's configuration to send logs to their proper output.
+
+All logging in MagicalRecord can be disabled by placing this define preprocessor statement prior to the main import of CoreData+MagicalRecord.h
+
+    #define MR_ENABLE_ACTIVE_RECORD_LOGGING 0
 
 # Usage
 
 ## Setting up the Core Data Stack
 
 To get started, first, import the header file *CoreData+MagicalRecord.h* in your project's pch file. This will allow a global include of all the required headers.
-Next, somewhere in your app delegate, in either the applicationDidFinishLaunching:(UIApplication *) withOptions:(NSDictionary *) method, or awakeFromNib, use **one** of the following setup calls with the **MagicalRecord** class:
+Next, somewhere in your app delegate, in either the applicationDidFinishLaunching:(UIApplication \*) withOptions:(NSDictionary \*) method, or awakeFromNib, use **one** of the following setup calls with the **MagicalRecord** class:
 
 	+ (void) setupCoreDataStack;
 	+ (void) setupAutoMigratingDefaultCoreDataStack;
@@ -58,13 +84,13 @@ And, before your app exits, you can use the clean up method:
   
 For further details, and to ensure that your application is suitable for iCloud, please see [Apple's iCloud Notes](https://developer.apple.com/library/ios/#releasenotes/DataManagement/RN-iCloudCoreData/_index.html).
 
-In particular note that the first helper method, + (void) setupCoreDataStackWithiCloudContainer:(NSString *)icloudBucket localStoreNamed:(NSString *)localStore, automatically generates the **NSPersistentStoreUbiquitousContentNameKey** based on your application's Bundle Identifier. 
+In particular note that the first helper method, + (void) setupCoreDataStackWithiCloudContainer:(NSString \*)icloudBucket localStoreNamed:(NSString \*)localStore, automatically generates the **NSPersistentStoreUbiquitousContentNameKey** based on your application's Bundle Identifier. 
 
 If you are managing multiple different iCloud stores it is highly recommended that you use one of the other helper methods to specify your own **contentNameKey**
 
 ### Default Managed Object Context 
 
-When using Core Data, you will deal with two types of objects the most: *NSManagedObject* and *NSManagedObjectContext*. MagicalRecord gives you a place for a default NSManagedObjectContext for use within your app. This is great for single threaded apps. You can easily get to this default context by calling:
+When using Core Data, you will deal with two types of objects the most: *NSManagedObject* and *NSManagedObjectContext*. MagicalRecord provides a single place for a default NSManagedObjectContext for use within your app. This is great for single threaded apps. You can easily get to this default context by calling:
 
     [NSManagedObjectContext MR_defaultContext];
 
@@ -255,11 +281,8 @@ This completion block is called on the main thread (queue), so this is also safe
 
 # Data Import
 
-*Experimental*
-
-MagicalRecord will now import data from NSObjects into your Core Data store. [Documentation](https://github.com/magicalpanda/MagicalRecord/wiki/Data-Import) for this feature will be added to the wiki.
-This feature is currently under development, and is undergoing updates. Feel free to try it out, add tests and send in your feedback.
+MagicalRecord will now import data from NSObjects into your Core Data store. [Documentation](https://github.com/magicalpanda/MagicalRecord/wiki/Data-Import) for this feature is forthcoming.
 	
 # Extra Bits
-This Code is released under the MIT License by [Magical Panda Software, LLC](http://www.magicalpanda.com).  
+This Code is released under the MIT License by [Magical Panda Software, LLC](http://www.magicalpanda.com).  We love working on iOS and Mac apps for you!
 There is no charge for Awesome.
