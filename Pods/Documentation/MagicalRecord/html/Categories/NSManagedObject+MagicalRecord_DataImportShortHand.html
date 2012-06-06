@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 1.8.3 </a></h1>
 				<a id="developerHome" href="../index.html">Saul Mora</a>
 			</div>
 			
@@ -44,16 +44,22 @@
 	
 	<option value="//api/name/importFromArray:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ importFromArray:inContext:</option>
 	
-	<option value="//api/name/importFromObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ importFromObject:</option>
+	<option value="//api/name/importFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ importFromDictionary:</option>
 	
-	<option value="//api/name/importFromObject:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ importFromObject:inContext:</option>
+	<option value="//api/name/importFromDictionary:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ importFromDictionary:inContext:</option>
+	
+	<option value="//api/name/updateFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateFromDictionary:</option>
+	
+	<option value="//api/name/updateFromDictionary:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateFromDictionary:inContext:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/importValuesForKeysWithObject:">&nbsp;&nbsp;&nbsp;&nbsp;- importValuesForKeysWithObject:</option>
+	<option value="//api/name/importValuesForKeysWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- importValuesForKeysWithDictionary:</option>
+	
+	<option value="//api/name/updateValuesForKeysWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- updateValuesForKeysWithDictionary:</option>
 	
 	
 	
@@ -83,9 +89,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importFromArray:inContext:">importFromArray:inContext:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importFromObject:">importFromObject:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importFromDictionary:">importFromDictionary:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importFromObject:inContext:">importFromObject:inContext:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importFromDictionary:inContext:">importFromDictionary:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateFromDictionary:">updateFromDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateFromDictionary:inContext:">updateFromDictionary:inContext:</a></span></li>
 	
 </ul></li>
 
@@ -93,7 +103,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importValuesForKeysWithObject:">importValuesForKeysWithObject:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/importValuesForKeysWithDictionary:">importValuesForKeysWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateValuesForKeysWithDictionary:">updateValuesForKeysWithDictionary:</a></span></li>
 	
 </ul></li>
 
@@ -139,21 +151,28 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/importValuesForKeysWithObject:">&ndash;&nbsp;importValuesForKeysWithObject:</a></code>
+		<code><a href="#//api/name/importValuesForKeysWithDictionary:">&ndash;&nbsp;importValuesForKeysWithDictionary:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/importFromObject:">+&nbsp;importFromObject:</a></code>
+		<code><a href="#//api/name/updateValuesForKeysWithDictionary:">&ndash;&nbsp;updateValuesForKeysWithDictionary:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/importFromObject:inContext:">+&nbsp;importFromObject:inContext:</a></code>
+		<code><a href="#//api/name/importFromDictionary:">+&nbsp;importFromDictionary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/importFromDictionary:inContext:">+&nbsp;importFromDictionary:inContext:</a></code>
 		
 	</span>
 	
@@ -168,6 +187,20 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/importFromArray:inContext:">+&nbsp;importFromArray:inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateFromDictionary:">+&nbsp;updateFromDictionary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateFromDictionary:inContext:">+&nbsp;updateFromDictionary:inContext:</a></code>
 		
 	</span>
 	
@@ -210,23 +243,45 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/importFromObject:" title="importFromObject:"></a>
-	<h3 class="subsubtitle method-title">importFromObject:</h3>
+	<a name="//api/name/importFromDictionary:" title="importFromDictionary:"></a>
+	<h3 class="subsubtitle method-title">importFromDictionary:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (id)importFromObject:(id)<em>data</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)importFromDictionary:(id)<em>data</em></code></div>
 
     
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/importFromObject:inContext:" title="importFromObject:inContext:"></a>
-	<h3 class="subsubtitle method-title">importFromObject:inContext:</h3>
+	<a name="//api/name/importFromDictionary:inContext:" title="importFromDictionary:inContext:"></a>
+	<h3 class="subsubtitle method-title">importFromDictionary:inContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (id)importFromObject:(id)<em>data</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)importFromDictionary:(id)<em>data</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateFromDictionary:" title="updateFromDictionary:"></a>
+	<h3 class="subsubtitle method-title">updateFromDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)updateFromDictionary:(id)<em>objectData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateFromDictionary:inContext:" title="updateFromDictionary:inContext:"></a>
+	<h3 class="subsubtitle method-title">updateFromDictionary:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)updateFromDictionary:(id)<em>objectData</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
 
     
 </div>
@@ -240,12 +295,23 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/importValuesForKeysWithObject:" title="importValuesForKeysWithObject:"></a>
-	<h3 class="subsubtitle method-title">importValuesForKeysWithObject:</h3>
+	<a name="//api/name/importValuesForKeysWithDictionary:" title="importValuesForKeysWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">importValuesForKeysWithDictionary:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)importValuesForKeysWithObject:(id)<em>objectData</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)importValuesForKeysWithDictionary:(id)<em>objectData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateValuesForKeysWithDictionary:" title="updateValuesForKeysWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">updateValuesForKeysWithDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateValuesForKeysWithDictionary:(id)<em>objectData</em></code></div>
 
     
 </div>
@@ -263,7 +329,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-05)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-06)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

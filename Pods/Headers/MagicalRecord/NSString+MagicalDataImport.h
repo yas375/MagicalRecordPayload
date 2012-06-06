@@ -1,1 +1,1 @@
-../../MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h
+../../MagicalRecord/Source/Categories/DataImport/NSString+MagicalDataImport.h

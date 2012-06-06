@@ -1,1 +1,1 @@
-../../MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h
+../../MagicalRecord/Source/Categories/NSManagedObject+MagicalRecord.h

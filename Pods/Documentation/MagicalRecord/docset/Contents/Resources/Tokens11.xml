@@ -1,69 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSManagedObject+MagicalRecord_DataImportShortHand.html">
+	<File path="Categories/NSManagedObjectModel+MagicalRecord.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalRecord_DataImportShortHand)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectModel(MagicalRecord)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importValuesForKeysWithObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_defaultManagedObjectModel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)importValuesForKeysWithObject:(id)objectData</Declaration>
+			<Declaration>+ (NSManagedObjectModel *)MR_defaultManagedObjectModel</Declaration>
 			
 			
-			<Anchor>//api/name/importValuesForKeysWithObject:</Anchor>
+			<Anchor>//api/name/MR_defaultManagedObjectModel</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromObject:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_setDefaultManagedObjectModel:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
 			
-			<Declaration>+ (id)importFromObject:(id)data</Declaration>
+			<Declaration>+ (void)MR_setDefaultManagedObjectModel:(NSManagedObjectModel *)newDefaultModel</Declaration>
 			
 			
-			<Anchor>//api/name/importFromObject:</Anchor>
+			<Anchor>//api/name/MR_setDefaultManagedObjectModel:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromObject:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_newManagedObjectModel</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
 			
-			<Declaration>+ (id)importFromObject:(id)data inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSManagedObjectModel *)MR_newManagedObjectModel</Declaration>
 			
 			
-			<Anchor>//api/name/importFromObject:inContext:</Anchor>
+			<Anchor>//api/name/MR_newManagedObjectModel</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromArray:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_newManagedObjectModelNamed:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)importFromArray:(NSArray *)listOfObjectData</Declaration>
+			<Declaration>+ (NSManagedObjectModel *)MR_newManagedObjectModelNamed:(NSString *)modelFileName</Declaration>
 			
 			
-			<Anchor>//api/name/importFromArray:</Anchor>
+			<Anchor>//api/name/MR_newManagedObjectModelNamed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromArray:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_managedObjectModelNamed:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)importFromArray:(NSArray *)listOfObjectData inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSManagedObjectModel *)MR_managedObjectModelNamed:(NSString *)modelFileName</Declaration>
 			
 			
-			<Anchor>//api/name/importFromArray:inContext:</Anchor>
+			<Anchor>//api/name/MR_managedObjectModelNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_newModelNamed:inBundleNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectModel *)MR_newModelNamed:(NSString *)modelName inBundleNamed:(NSString *)bundleName</Declaration>
+			
+			
+			<Anchor>//api/name/MR_newModelNamed:inBundleNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectModel(MagicalRecord)/MR_mergedObjectModelFromMainBundle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectModel+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectModel *)MR_mergedObjectModelFromMainBundle</Declaration>
+			
+			
+			<Anchor>//api/name/MR_mergedObjectModelFromMainBundle</Anchor>
 		</Token>
 		
 	</File>

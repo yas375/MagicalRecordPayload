@@ -1,1 +1,1 @@
-../../MagicalRecord/MagicalRecord/Core/MagicalRecordShorthand.h
+../../MagicalRecord/Source/MagicalRecordShorthand.h

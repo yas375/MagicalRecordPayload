@@ -43,7 +43,7 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    [MagicalRecord cleanUp];
+    [MagicalRecordHelpers cleanUp];
 }
 							
 @end

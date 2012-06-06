@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/yas/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MagicalRecord-2.0.3.docset
-Time: 2012-06-04 22:38:28 +0000
+Path: /Users/yas/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MagicalRecord-1.8.3.docset
+Time: 2012-06-06 13:55:50 +0000

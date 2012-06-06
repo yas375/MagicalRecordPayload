@@ -1,124 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSManagedObjectContext+MagicalRecord.html">
+	<File path="Categories/NSPersistentStore+MagicalRecordShortHand.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalRecord)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/NSPersistentStore(MagicalRecordShortHand)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
 			
 			<NodeRef refid="16"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_initializeDefaultContextWithCoordinator:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/defaultLocalStoreUrl</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (void)MR_initializeDefaultContextWithCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			<Declaration>+ (NSURL *)defaultLocalStoreUrl</Declaration>
 			
 			
-			<Anchor>//api/name/MR_initializeDefaultContextWithCoordinator:</Anchor>
+			<Anchor>//api/name/defaultLocalStoreUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_context</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/defaultPersistentStore</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSManagedObjectContext *)MR_context</Declaration>
+			<Declaration>+ (NSPersistentStore *)defaultPersistentStore</Declaration>
 			
 			
-			<Anchor>//api/name/MR_context</Anchor>
+			<Anchor>//api/name/defaultPersistentStore</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_contextWithParent:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/setDefaultPersistentStore:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSManagedObjectContext *)MR_contextWithParent:(NSManagedObjectContext *)parentContext</Declaration>
+			<Declaration>+ (void)setDefaultPersistentStore:(NSPersistentStore *)store</Declaration>
 			
 			
-			<Anchor>//api/name/MR_contextWithParent:</Anchor>
+			<Anchor>//api/name/setDefaultPersistentStore:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_newMainQueueContext</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/urlForStoreName:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSManagedObjectContext *)MR_newMainQueueContext</Declaration>
+			<Declaration>+ (NSURL *)urlForStoreName:(NSString *)storeFileName</Declaration>
 			
 			
-			<Anchor>//api/name/MR_newMainQueueContext</Anchor>
+			<Anchor>//api/name/urlForStoreName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_contextThatPushesChangesToDefaultContext</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/cloudURLForUbiqutiousContainer:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSManagedObjectContext *)MR_contextThatPushesChangesToDefaultContext</Declaration>
-			
-			
-			<Anchor>//api/name/MR_contextThatPushesChangesToDefaultContext</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_contextWithStoreCoordinator:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
-			
-			<Declaration>+ (NSManagedObjectContext *)MR_contextWithStoreCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			<Declaration>+ (NSURL *)cloudURLForUbiqutiousContainer:(NSString *)bucketName</Declaration>
 			
 			
-			<Anchor>//api/name/MR_contextWithStoreCoordinator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_resetDefaultContext</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
-			
-			<Declaration>+ (void)MR_resetDefaultContext</Declaration>
-			
-			
-			<Anchor>//api/name/MR_resetDefaultContext</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_rootSavingContext</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
-			
-			<Declaration>+ (NSManagedObjectContext *)MR_rootSavingContext</Declaration>
-			
-			
-			<Anchor>//api/name/MR_rootSavingContext</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_defaultContext</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
-			
-			<Declaration>+ (NSManagedObjectContext *)MR_defaultContext</Declaration>
-			
-			
-			<Anchor>//api/name/MR_defaultContext</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecord)/MR_description</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObjectContext+MagicalRecord.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)MR_description</Declaration>
-			
-			
-			<Anchor>//api/name/MR_description</Anchor>
+			<Anchor>//api/name/cloudURLForUbiqutiousContainer:</Anchor>
 		</Token>
 		
 	</File>

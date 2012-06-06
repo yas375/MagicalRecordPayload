@@ -1,344 +1,916 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSManagedObject+MagicalFinders.html">
+	<File path="Categories/NSManagedObject+MagicalRecordShortHand.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalFinders)</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalRecordShortHand)</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
 			
 			<NodeRef refid="6"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAll</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/defaultBatchSize</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAll</Declaration>
+			<Declaration>+ (NSUInteger)defaultBatchSize</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAll</Anchor>
+			<Anchor>//api/name/defaultBatchSize</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllInContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/setDefaultBatchSize:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllInContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (void)setDefaultBatchSize:(NSUInteger)newBatchSize</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllInContext:</Anchor>
+			<Anchor>//api/name/setDefaultBatchSize:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllSortedBy:ascending:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/executeFetchRequest:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			<Declaration>+ (NSArray *)executeFetchRequest:(NSFetchRequest *)request</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllSortedBy:ascending:</Anchor>
+			<Anchor>//api/name/executeFetchRequest:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllSortedBy:ascending:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/executeFetchRequest:inContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSArray *)executeFetchRequest:(NSFetchRequest *)request inContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllSortedBy:ascending:inContext:</Anchor>
+			<Anchor>//api/name/executeFetchRequest:inContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllSortedBy:ascending:withPredicate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/executeFetchRequestAndReturnFirstObject:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm</Declaration>
+			<Declaration>+ (id)executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)request</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllSortedBy:ascending:withPredicate:</Anchor>
+			<Anchor>//api/name/executeFetchRequestAndReturnFirstObject:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllSortedBy:ascending:withPredicate:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/executeFetchRequestAndReturnFirstObject:inContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (id)executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)request inContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllSortedBy:ascending:withPredicate:inContext:</Anchor>
+			<Anchor>//api/name/executeFetchRequestAndReturnFirstObject:inContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllWithPredicate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/createFetchRequest</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			<Declaration>+ (NSFetchRequest *)createFetchRequest</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllWithPredicate:</Anchor>
+			<Anchor>//api/name/createFetchRequest</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findAllWithPredicate:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/createFetchRequestInContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findAllWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSFetchRequest *)createFetchRequestInContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findAllWithPredicate:inContext:</Anchor>
+			<Anchor>//api/name/createFetchRequestInContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirst</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/entityDescription</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirst</Declaration>
+			<Declaration>+ (NSEntityDescription *)entityDescription</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirst</Anchor>
+			<Anchor>//api/name/entityDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstInContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/entityDescriptionInContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstInContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSEntityDescription *)entityDescriptionInContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstInContext:</Anchor>
+			<Anchor>//api/name/entityDescriptionInContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/propertiesNamed:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			<Declaration>+ (NSArray *)propertiesNamed:(NSArray *)properties</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:</Anchor>
+			<Anchor>//api/name/propertiesNamed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/createEntity</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (id)createEntity</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:inContext:</Anchor>
+			<Anchor>//api/name/createEntity</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:sortedBy:ascending:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/createInContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending</Declaration>
+			<Declaration>+ (id)createInContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:sortedBy:ascending:</Anchor>
+			<Anchor>//api/name/createInContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:sortedBy:ascending:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/deleteEntity</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>- (BOOL)deleteEntity</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:sortedBy:ascending:inContext:</Anchor>
+			<Anchor>//api/name/deleteEntity</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:andRetrieveAttributes:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/deleteInContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes</Declaration>
+			<Declaration>- (BOOL)deleteInContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:andRetrieveAttributes:</Anchor>
+			<Anchor>//api/name/deleteInContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:andRetrieveAttributes:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/deleteAllMatchingPredicate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (BOOL)deleteAllMatchingPredicate:(NSPredicate *)predicate</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:andRetrieveAttributes:inContext:</Anchor>
+			<Anchor>//api/name/deleteAllMatchingPredicate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:sortedBy:ascending:andRetrieveAttributes:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/deleteAllMatchingPredicate:inContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending andRetrieveAttributes:(id)attributes, ...</Declaration>
+			<Declaration>+ (BOOL)deleteAllMatchingPredicate:(NSPredicate *)predicate inContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:sortedBy:ascending:andRetrieveAttributes:</Anchor>
+			<Anchor>//api/name/deleteAllMatchingPredicate:inContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstWithPredicate:sortedBy:ascending:inContext:andRetrieveAttributes:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/truncateAll</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context andRetrieveAttributes:(id)attributes, ...</Declaration>
+			<Declaration>+ (BOOL)truncateAll</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstWithPredicate:sortedBy:ascending:inContext:andRetrieveAttributes:</Anchor>
+			<Anchor>//api/name/truncateAll</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstByAttribute:withValue:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/truncateAllInContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			<Declaration>+ (BOOL)truncateAllInContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstByAttribute:withValue:</Anchor>
+			<Anchor>//api/name/truncateAllInContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findFirstByAttribute:withValue:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/ascendingSortDescriptors:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (id)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSArray *)ascendingSortDescriptors:(NSArray *)attributesToSortBy</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findFirstByAttribute:withValue:inContext:</Anchor>
+			<Anchor>//api/name/ascendingSortDescriptors:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findByAttribute:withValue:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/descendingSortDescriptors:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			<Declaration>+ (NSArray *)descendingSortDescriptors:(NSArray *)attributesToSortBy</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findByAttribute:withValue:</Anchor>
+			<Anchor>//api/name/descendingSortDescriptors:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findByAttribute:withValue:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/numberOfEntities</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSNumber *)numberOfEntities</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findByAttribute:withValue:inContext:</Anchor>
+			<Anchor>//api/name/numberOfEntities</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findByAttribute:withValue:andOrderBy:ascending:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/numberOfEntitiesWithContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findByAttribute:(NSString *)attribute withValue:(id)searchValue andOrderBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findByAttribute:withValue:andOrderBy:ascending:</Anchor>
+			<Anchor>//api/name/numberOfEntitiesWithContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_findByAttribute:withValue:andOrderBy:ascending:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/numberOfEntitiesWithPredicate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSArray *)MR_findByAttribute:(NSString *)attribute withValue:(id)searchValue andOrderBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm</Declaration>
 			
 			
-			<Anchor>//api/name/MR_findByAttribute:withValue:andOrderBy:ascending:inContext:</Anchor>
+			<Anchor>//api/name/numberOfEntitiesWithPredicate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/numberOfEntitiesWithPredicate:inContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm groupBy:(NSString *)groupingKeyPath delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate</Declaration>
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</Anchor>
+			<Anchor>//api/name/numberOfEntitiesWithPredicate:inContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/countOfEntities</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm groupBy:(NSString *)groupingKeyPath delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSUInteger)countOfEntities</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</Anchor>
+			<Anchor>//api/name/countOfEntities</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/countOfEntitiesWithContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			<Declaration>+ (NSUInteger)countOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:</Anchor>
+			<Anchor>//api/name/countOfEntitiesWithContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/countOfEntitiesWithPredicate:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (NSUInteger)countOfEntitiesWithPredicate:(NSPredicate *)searchFilter</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:inContext:</Anchor>
+			<Anchor>//api/name/countOfEntitiesWithPredicate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/countOfEntitiesWithPredicate:inContext:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate</Declaration>
+			<Declaration>+ (NSUInteger)countOfEntitiesWithPredicate:(NSPredicate *)searchFilter inContext:(NSManagedObjectContext *)context</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:</Anchor>
+			<Anchor>//api/name/countOfEntitiesWithPredicate:inContext:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalFinders)/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:inContext:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/hasAtLeastOneEntity</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>NSManagedObject+MagicalFinders.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSFetchedResultsController *)MR_fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate inContext:(NSManagedObjectContext *)context</Declaration>
+			<Declaration>+ (BOOL)hasAtLeastOneEntity</Declaration>
 			
 			
-			<Anchor>//api/name/MR_fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:inContext:</Anchor>
+			<Anchor>//api/name/hasAtLeastOneEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/hasAtLeastOneEntityInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)hasAtLeastOneEntityInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/hasAtLeastOneEntityInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAll</Declaration>
+			
+			
+			<Anchor>//api/name/requestAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllWhere:isEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllWhere:(NSString *)property isEqualTo:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllWhere:isEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllWhere:isEqualTo:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllWhere:(NSString *)property isEqualTo:(id)value inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllWhere:isEqualTo:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestFirstWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestFirstWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/requestFirstWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestFirstWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestFirstWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestFirstByAttribute:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestFirstByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			
+			
+			<Anchor>//api/name/requestFirstByAttribute:withValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestFirstByAttribute:withValue:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestFirstByAttribute:withValue:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllSortedBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllSortedBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllSortedBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllSortedBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllSortedBy:ascending:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllSortedBy:ascending:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/requestAllSortedBy:ascending:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/requestAllSortedBy:ascending:withPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAll</Declaration>
+			
+			
+			<Anchor>//api/name/findAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findAllInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllSortedBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/findAllSortedBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllSortedBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findAllSortedBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllSortedBy:ascending:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/findAllSortedBy:ascending:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllSortedBy:ascending:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findAllSortedBy:ascending:withPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/findAllWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findAllWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findAllWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findAllWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/objectWithMinValueFor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithMinValueFor:(NSString *)property</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithMinValueFor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/objectWithMinValueFor:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithMinValueFor:(NSString *)property inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithMinValueFor:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirst</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirst</Declaration>
+			
+			
+			<Anchor>//api/name/findFirst</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:sortedBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:sortedBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:sortedBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:sortedBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:andRetrieveAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:andRetrieveAttributes:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:andRetrieveAttributes:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:andRetrieveAttributes:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:sortedBy:ascending:andRetrieveAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending andRetrieveAttributes:(id)attributes, ...</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:sortedBy:ascending:andRetrieveAttributes:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstWithPredicate:sortedBy:ascending:inContext:andRetrieveAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context andRetrieveAttributes:(id)attributes, ...</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstWithPredicate:sortedBy:ascending:inContext:andRetrieveAttributes:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstByAttribute:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstByAttribute:withValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findFirstByAttribute:withValue:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findFirstByAttribute:withValue:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findByAttribute:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			
+			
+			<Anchor>//api/name/findByAttribute:withValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findByAttribute:withValue:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findByAttribute:withValue:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findByAttribute:withValue:andOrderBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findByAttribute:(NSString *)attribute withValue:(id)searchValue andOrderBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/findByAttribute:withValue:andOrderBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/findByAttribute:withValue:andOrderBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)findByAttribute:(NSString *)attribute withValue:(id)searchValue andOrderBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/findByAttribute:withValue:andOrderBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/aggregateOperation:onAttribute:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateOperation:onAttribute:withPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/aggregateOperation:onAttribute:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateOperation:onAttribute:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)inContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/inThreadContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)inThreadContext</Declaration>
+			
+			
+			<Anchor>//api/name/inThreadContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/performFetch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)performFetch:(NSFetchedResultsController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/performFetch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm groupBy:(NSString *)groupingKeyPath delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm groupBy:(NSString *)groupingKeyPath delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllGroupedBy:withPredicate:sortedBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllGroupedBy:withPredicate:sortedBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllGroupedBy:withPredicate:sortedBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllGroupedBy:withPredicate:sortedBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecordShortHand)/fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchedResultsController *)fetchAllGroupedBy:(NSString *)group withPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortTerm ascending:(BOOL)ascending delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)delegate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAllGroupedBy:withPredicate:sortedBy:ascending:delegate:inContext:</Anchor>
 		</Token>
 		
 	</File>

@@ -27,7 +27,7 @@
 }
 
 + (void)initialize {
-    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Model.sqlite"];
+    [MagicalRecordHelpers setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Model.sqlite"];
 }
 
 - (void)createDefaultDataIfNeeded {

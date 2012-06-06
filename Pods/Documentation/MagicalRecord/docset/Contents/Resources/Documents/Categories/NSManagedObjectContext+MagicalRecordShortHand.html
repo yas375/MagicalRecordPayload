@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 1.8.3 </a></h1>
 				<a id="developerHome" href="../index.html">Saul Mora</a>
 			</div>
 			
@@ -40,32 +40,46 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/cleanUp">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanUp</option>
-	
 	<option value="//api/name/context">&nbsp;&nbsp;&nbsp;&nbsp;+ context</option>
 	
-	<option value="//api/name/contextThatPushesChangesToDefaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ contextThatPushesChangesToDefaultContext</option>
+	<option value="//api/name/contextForCurrentThread">&nbsp;&nbsp;&nbsp;&nbsp;+ contextForCurrentThread</option>
 	
-	<option value="//api/name/contextWithParent:">&nbsp;&nbsp;&nbsp;&nbsp;+ contextWithParent:</option>
+	<option value="//api/name/contextThatNotifiesDefaultContextOnMainThread">&nbsp;&nbsp;&nbsp;&nbsp;+ contextThatNotifiesDefaultContextOnMainThread</option>
+	
+	<option value="//api/name/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</option>
 	
 	<option value="//api/name/contextWithStoreCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ contextWithStoreCoordinator:</option>
 	
 	<option value="//api/name/defaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultContext</option>
 	
-	<option value="//api/name/initializeDefaultContextWithCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeDefaultContextWithCoordinator:</option>
-	
-	<option value="//api/name/newMainQueueContext">&nbsp;&nbsp;&nbsp;&nbsp;+ newMainQueueContext</option>
+	<option value="//api/name/resetContextForCurrentThread">&nbsp;&nbsp;&nbsp;&nbsp;+ resetContextForCurrentThread</option>
 	
 	<option value="//api/name/resetDefaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ resetDefaultContext</option>
 	
-	<option value="//api/name/rootSavingContext">&nbsp;&nbsp;&nbsp;&nbsp;+ rootSavingContext</option>
+	<option value="//api/name/setDefaultContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultContext:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/description">&nbsp;&nbsp;&nbsp;&nbsp;- description</option>
+	<option value="//api/name/observeContext:">&nbsp;&nbsp;&nbsp;&nbsp;- observeContext:</option>
+	
+	<option value="//api/name/observeContextOnMainThread:">&nbsp;&nbsp;&nbsp;&nbsp;- observeContextOnMainThread:</option>
+	
+	<option value="//api/name/observeiCloudChangesInCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;- observeiCloudChangesInCoordinator:</option>
+	
+	<option value="//api/name/save">&nbsp;&nbsp;&nbsp;&nbsp;- save</option>
+	
+	<option value="//api/name/saveOnBackgroundThread">&nbsp;&nbsp;&nbsp;&nbsp;- saveOnBackgroundThread</option>
+	
+	<option value="//api/name/saveOnMainThread">&nbsp;&nbsp;&nbsp;&nbsp;- saveOnMainThread</option>
+	
+	<option value="//api/name/saveWithErrorHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- saveWithErrorHandler:</option>
+	
+	<option value="//api/name/stopObservingContext:">&nbsp;&nbsp;&nbsp;&nbsp;- stopObservingContext:</option>
+	
+	<option value="//api/name/stopObservingiCloudChangesInCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;- stopObservingiCloudChangesInCoordinator:</option>
 	
 	
 	
@@ -91,25 +105,23 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanUp">cleanUp</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/context">context</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextThatPushesChangesToDefaultContext">contextThatPushesChangesToDefaultContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextForCurrentThread">contextForCurrentThread</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextWithParent:">contextWithParent:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextThatNotifiesDefaultContextOnMainThread">contextThatNotifiesDefaultContextOnMainThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contextWithStoreCoordinator:">contextWithStoreCoordinator:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultContext">defaultContext</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeDefaultContextWithCoordinator:">initializeDefaultContextWithCoordinator:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/newMainQueueContext">newMainQueueContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetContextForCurrentThread">resetContextForCurrentThread</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetDefaultContext">resetDefaultContext</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootSavingContext">rootSavingContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultContext:">setDefaultContext:</a></span></li>
 	
 </ul></li>
 
@@ -117,7 +129,23 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/description">description</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeContext:">observeContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeContextOnMainThread:">observeContextOnMainThread:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/observeiCloudChangesInCoordinator:">observeiCloudChangesInCoordinator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/save">save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveOnBackgroundThread">saveOnBackgroundThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveOnMainThread">saveOnMainThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveWithErrorHandler:">saveWithErrorHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopObservingContext:">stopObservingContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopObservingiCloudChangesInCoordinator:">stopObservingiCloudChangesInCoordinator:</a></span></li>
 	
 </ul></li>
 
@@ -163,42 +191,63 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initializeDefaultContextWithCoordinator:">+&nbsp;initializeDefaultContextWithCoordinator:</a></code>
+		<code><a href="#//api/name/observeContext:">&ndash;&nbsp;observeContext:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/context">+&nbsp;context</a></code>
+		<code><a href="#//api/name/stopObservingContext:">&ndash;&nbsp;stopObservingContext:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/contextWithParent:">+&nbsp;contextWithParent:</a></code>
+		<code><a href="#//api/name/observeContextOnMainThread:">&ndash;&nbsp;observeContextOnMainThread:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/newMainQueueContext">+&nbsp;newMainQueueContext</a></code>
+		<code><a href="#//api/name/observeiCloudChangesInCoordinator:">&ndash;&nbsp;observeiCloudChangesInCoordinator:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/contextThatPushesChangesToDefaultContext">+&nbsp;contextThatPushesChangesToDefaultContext</a></code>
+		<code><a href="#//api/name/stopObservingiCloudChangesInCoordinator:">&ndash;&nbsp;stopObservingiCloudChangesInCoordinator:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/contextWithStoreCoordinator:">+&nbsp;contextWithStoreCoordinator:</a></code>
+		<code><a href="#//api/name/save">&ndash;&nbsp;save</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveWithErrorHandler:">&ndash;&nbsp;saveWithErrorHandler:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveOnMainThread">&ndash;&nbsp;saveOnMainThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveOnBackgroundThread">&ndash;&nbsp;saveOnBackgroundThread</a></code>
 		
 	</span>
 	
@@ -212,13 +261,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/rootSavingContext">+&nbsp;rootSavingContext</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/defaultContext">+&nbsp;defaultContext</a></code>
 		
 	</span>
@@ -226,14 +268,49 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/cleanUp">+&nbsp;cleanUp</a></code>
+		<code><a href="#//api/name/setDefaultContext:">+&nbsp;setDefaultContext:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/description">&ndash;&nbsp;description</a></code>
+		<code><a href="#//api/name/resetContextForCurrentThread">+&nbsp;resetContextForCurrentThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/context">+&nbsp;context</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contextForCurrentThread">+&nbsp;contextForCurrentThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contextThatNotifiesDefaultContextOnMainThread">+&nbsp;contextThatNotifiesDefaultContextOnMainThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">+&nbsp;contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contextWithStoreCoordinator:">+&nbsp;contextWithStoreCoordinator:</a></code>
 		
 	</span>
 	
@@ -254,17 +331,6 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/cleanUp" title="cleanUp"></a>
-	<h3 class="subsubtitle method-title">cleanUp</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (void)cleanUp</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/context" title="context"></a>
 	<h3 class="subsubtitle method-title">context</h3>
 	
@@ -276,23 +342,34 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/contextThatPushesChangesToDefaultContext" title="contextThatPushesChangesToDefaultContext"></a>
-	<h3 class="subsubtitle method-title">contextThatPushesChangesToDefaultContext</h3>
+	<a name="//api/name/contextForCurrentThread" title="contextForCurrentThread"></a>
+	<h3 class="subsubtitle method-title">contextForCurrentThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)contextThatPushesChangesToDefaultContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)contextForCurrentThread</code></div>
 
     
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/contextWithParent:" title="contextWithParent:"></a>
-	<h3 class="subsubtitle method-title">contextWithParent:</h3>
+	<a name="//api/name/contextThatNotifiesDefaultContextOnMainThread" title="contextThatNotifiesDefaultContextOnMainThread"></a>
+	<h3 class="subsubtitle method-title">contextThatNotifiesDefaultContextOnMainThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)contextWithParent:(NSManagedObjectContext *)<em>parentContext</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)contextThatNotifiesDefaultContextOnMainThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:" title="contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:"></a>
+	<h3 class="subsubtitle method-title">contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
 
     
 </div>
@@ -320,23 +397,12 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initializeDefaultContextWithCoordinator:" title="initializeDefaultContextWithCoordinator:"></a>
-	<h3 class="subsubtitle method-title">initializeDefaultContextWithCoordinator:</h3>
+	<a name="//api/name/resetContextForCurrentThread" title="resetContextForCurrentThread"></a>
+	<h3 class="subsubtitle method-title">resetContextForCurrentThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (void)initializeDefaultContextWithCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/newMainQueueContext" title="newMainQueueContext"></a>
-	<h3 class="subsubtitle method-title">newMainQueueContext</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)newMainQueueContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)resetContextForCurrentThread</code></div>
 
     
 </div>
@@ -353,12 +419,12 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/rootSavingContext" title="rootSavingContext"></a>
-	<h3 class="subsubtitle method-title">rootSavingContext</h3>
+	<a name="//api/name/setDefaultContext:" title="setDefaultContext:"></a>
+	<h3 class="subsubtitle method-title">setDefaultContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)rootSavingContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultContext:(NSManagedObjectContext *)<em>moc</em></code></div>
 
     
 </div>
@@ -372,12 +438,100 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/description" title="description"></a>
-	<h3 class="subsubtitle method-title">description</h3>
+	<a name="//api/name/observeContext:" title="observeContext:"></a>
+	<h3 class="subsubtitle method-title">observeContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (NSString *)description</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)observeContext:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeContextOnMainThread:" title="observeContextOnMainThread:"></a>
+	<h3 class="subsubtitle method-title">observeContextOnMainThread:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)observeContextOnMainThread:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/observeiCloudChangesInCoordinator:" title="observeiCloudChangesInCoordinator:"></a>
+	<h3 class="subsubtitle method-title">observeiCloudChangesInCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)observeiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/save" title="save"></a>
+	<h3 class="subsubtitle method-title">save</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)save</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveOnBackgroundThread" title="saveOnBackgroundThread"></a>
+	<h3 class="subsubtitle method-title">saveOnBackgroundThread</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)saveOnBackgroundThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveOnMainThread" title="saveOnMainThread"></a>
+	<h3 class="subsubtitle method-title">saveOnMainThread</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)saveOnMainThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveWithErrorHandler:" title="saveWithErrorHandler:"></a>
+	<h3 class="subsubtitle method-title">saveWithErrorHandler:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)saveWithErrorHandler:(void ( ^ ) ( NSError *))<em>errorCallback</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopObservingContext:" title="stopObservingContext:"></a>
+	<h3 class="subsubtitle method-title">stopObservingContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopObservingContext:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopObservingiCloudChangesInCoordinator:" title="stopObservingiCloudChangesInCoordinator:"></a>
+	<h3 class="subsubtitle method-title">stopObservingiCloudChangesInCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopObservingiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
 
     
 </div>
@@ -395,7 +549,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-05)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-06)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 1.8.3 </a></h1>
 				<a id="developerHome" href="../index.html">Saul Mora</a>
 			</div>
 			
@@ -36,34 +36,55 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/MR_notifiesMainContextOnSave">&nbsp;&nbsp;&nbsp;&nbsp;MR_notifiesMainContextOnSave</option>
+	
+	
 	
 	
 	<option value="class_methods">Class Methods</option>
 	
 	<option value="//api/name/MR_context">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_context</option>
 	
-	<option value="//api/name/MR_contextThatPushesChangesToDefaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextThatPushesChangesToDefaultContext</option>
+	<option value="//api/name/MR_contextForCurrentThread">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextForCurrentThread</option>
 	
-	<option value="//api/name/MR_contextWithParent:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextWithParent:</option>
+	<option value="//api/name/MR_contextThatNotifiesDefaultContextOnMainThread">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextThatNotifiesDefaultContextOnMainThread</option>
+	
+	<option value="//api/name/MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</option>
 	
 	<option value="//api/name/MR_contextWithStoreCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_contextWithStoreCoordinator:</option>
 	
 	<option value="//api/name/MR_defaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_defaultContext</option>
 	
-	<option value="//api/name/MR_initializeDefaultContextWithCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_initializeDefaultContextWithCoordinator:</option>
-	
-	<option value="//api/name/MR_newMainQueueContext">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_newMainQueueContext</option>
+	<option value="//api/name/MR_resetContextForCurrentThread">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_resetContextForCurrentThread</option>
 	
 	<option value="//api/name/MR_resetDefaultContext">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_resetDefaultContext</option>
 	
-	<option value="//api/name/MR_rootSavingContext">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_rootSavingContext</option>
+	<option value="//api/name/MR_setDefaultContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_setDefaultContext:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/MR_description">&nbsp;&nbsp;&nbsp;&nbsp;- MR_description</option>
+	<option value="//api/name/MR_observeContext:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_observeContext:</option>
+	
+	<option value="//api/name/MR_observeContextOnMainThread:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_observeContextOnMainThread:</option>
+	
+	<option value="//api/name/MR_observeiCloudChangesInCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_observeiCloudChangesInCoordinator:</option>
+	
+	<option value="//api/name/MR_save">&nbsp;&nbsp;&nbsp;&nbsp;- MR_save</option>
+	
+	<option value="//api/name/MR_saveOnBackgroundThread">&nbsp;&nbsp;&nbsp;&nbsp;- MR_saveOnBackgroundThread</option>
+	
+	<option value="//api/name/MR_saveOnMainThread">&nbsp;&nbsp;&nbsp;&nbsp;- MR_saveOnMainThread</option>
+	
+	<option value="//api/name/MR_saveWithErrorHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_saveWithErrorHandler:</option>
+	
+	<option value="//api/name/MR_stopObservingContext:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_stopObservingContext:</option>
+	
+	<option value="//api/name/MR_stopObservingiCloudChangesInCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_stopObservingiCloudChangesInCoordinator:</option>
 	
 	
 	
@@ -85,27 +106,33 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_notifiesMainContextOnSave">MR_notifiesMainContextOnSave</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_context">MR_context</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextThatPushesChangesToDefaultContext">MR_contextThatPushesChangesToDefaultContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextForCurrentThread">MR_contextForCurrentThread</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextWithParent:">MR_contextWithParent:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextThatNotifiesDefaultContextOnMainThread">MR_contextThatNotifiesDefaultContextOnMainThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_contextWithStoreCoordinator:">MR_contextWithStoreCoordinator:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_defaultContext">MR_defaultContext</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_initializeDefaultContextWithCoordinator:">MR_initializeDefaultContextWithCoordinator:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_newMainQueueContext">MR_newMainQueueContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_resetContextForCurrentThread">MR_resetContextForCurrentThread</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_resetDefaultContext">MR_resetDefaultContext</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_rootSavingContext">MR_rootSavingContext</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_setDefaultContext:">MR_setDefaultContext:</a></span></li>
 	
 </ul></li>
 
@@ -113,7 +140,23 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_description">MR_description</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_observeContext:">MR_observeContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_observeContextOnMainThread:">MR_observeContextOnMainThread:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_observeiCloudChangesInCoordinator:">MR_observeiCloudChangesInCoordinator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_save">MR_save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_saveOnBackgroundThread">MR_saveOnBackgroundThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_saveOnMainThread">MR_saveOnMainThread</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_saveWithErrorHandler:">MR_saveWithErrorHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_stopObservingContext:">MR_stopObservingContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_stopObservingiCloudChangesInCoordinator:">MR_stopObservingiCloudChangesInCoordinator:</a></span></li>
 	
 </ul></li>
 
@@ -159,42 +202,63 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_initializeDefaultContextWithCoordinator:">+&nbsp;MR_initializeDefaultContextWithCoordinator:</a></code>
+		<code><a href="#//api/name/MR_observeContext:">&ndash;&nbsp;MR_observeContext:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_context">+&nbsp;MR_context</a></code>
+		<code><a href="#//api/name/MR_stopObservingContext:">&ndash;&nbsp;MR_stopObservingContext:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_contextWithParent:">+&nbsp;MR_contextWithParent:</a></code>
+		<code><a href="#//api/name/MR_observeContextOnMainThread:">&ndash;&nbsp;MR_observeContextOnMainThread:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_newMainQueueContext">+&nbsp;MR_newMainQueueContext</a></code>
+		<code><a href="#//api/name/MR_observeiCloudChangesInCoordinator:">&ndash;&nbsp;MR_observeiCloudChangesInCoordinator:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_contextThatPushesChangesToDefaultContext">+&nbsp;MR_contextThatPushesChangesToDefaultContext</a></code>
+		<code><a href="#//api/name/MR_stopObservingiCloudChangesInCoordinator:">&ndash;&nbsp;MR_stopObservingiCloudChangesInCoordinator:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_contextWithStoreCoordinator:">+&nbsp;MR_contextWithStoreCoordinator:</a></code>
+		<code><a href="#//api/name/MR_save">&ndash;&nbsp;MR_save</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_saveWithErrorHandler:">&ndash;&nbsp;MR_saveWithErrorHandler:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_saveOnMainThread">&ndash;&nbsp;MR_saveOnMainThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_saveOnBackgroundThread">&ndash;&nbsp;MR_saveOnBackgroundThread</a></code>
 		
 	</span>
 	
@@ -208,13 +272,6 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_rootSavingContext">+&nbsp;MR_rootSavingContext</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/MR_defaultContext">+&nbsp;MR_defaultContext</a></code>
 		
 	</span>
@@ -222,10 +279,59 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_description">&ndash;&nbsp;MR_description</a></code>
+		<code><a href="#//api/name/MR_setDefaultContext:">+&nbsp;MR_setDefaultContext:</a></code>
 		
 	</span>
 	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_resetContextForCurrentThread">+&nbsp;MR_resetContextForCurrentThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_context">+&nbsp;MR_context</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_contextForCurrentThread">+&nbsp;MR_contextForCurrentThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_contextThatNotifiesDefaultContextOnMainThread">+&nbsp;MR_contextThatNotifiesDefaultContextOnMainThread</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:">+&nbsp;MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_contextWithStoreCoordinator:">+&nbsp;MR_contextWithStoreCoordinator:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_notifiesMainContextOnSave">&nbsp;&nbsp;MR_notifiesMainContextOnSave</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -235,6 +341,23 @@
 					
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_notifiesMainContextOnSave" title="MR_notifiesMainContextOnSave"></a>
+	<h3 class="subsubtitle method-title">MR_notifiesMainContextOnSave</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, setter=MR_setNotifiesMainContextOnSave, :) BOOL MR_notifiesMainContextOnSave</code></div>
+
+    
+</div>
+						
+					</div>
 					
 					
 					
@@ -254,23 +377,34 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_contextThatPushesChangesToDefaultContext" title="MR_contextThatPushesChangesToDefaultContext"></a>
-	<h3 class="subsubtitle method-title">MR_contextThatPushesChangesToDefaultContext</h3>
+	<a name="//api/name/MR_contextForCurrentThread" title="MR_contextForCurrentThread"></a>
+	<h3 class="subsubtitle method-title">MR_contextForCurrentThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_contextThatPushesChangesToDefaultContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_contextForCurrentThread</code></div>
 
     
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_contextWithParent:" title="MR_contextWithParent:"></a>
-	<h3 class="subsubtitle method-title">MR_contextWithParent:</h3>
+	<a name="//api/name/MR_contextThatNotifiesDefaultContextOnMainThread" title="MR_contextThatNotifiesDefaultContextOnMainThread"></a>
+	<h3 class="subsubtitle method-title">MR_contextThatNotifiesDefaultContextOnMainThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_contextWithParent:(NSManagedObjectContext *)<em>parentContext</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_contextThatNotifiesDefaultContextOnMainThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:" title="MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:"></a>
+	<h3 class="subsubtitle method-title">MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
 
     
 </div>
@@ -298,23 +432,12 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_initializeDefaultContextWithCoordinator:" title="MR_initializeDefaultContextWithCoordinator:"></a>
-	<h3 class="subsubtitle method-title">MR_initializeDefaultContextWithCoordinator:</h3>
+	<a name="//api/name/MR_resetContextForCurrentThread" title="MR_resetContextForCurrentThread"></a>
+	<h3 class="subsubtitle method-title">MR_resetContextForCurrentThread</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (void)MR_initializeDefaultContextWithCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/MR_newMainQueueContext" title="MR_newMainQueueContext"></a>
-	<h3 class="subsubtitle method-title">MR_newMainQueueContext</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_newMainQueueContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)MR_resetContextForCurrentThread</code></div>
 
     
 </div>
@@ -331,12 +454,12 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_rootSavingContext" title="MR_rootSavingContext"></a>
-	<h3 class="subsubtitle method-title">MR_rootSavingContext</h3>
+	<a name="//api/name/MR_setDefaultContext:" title="MR_setDefaultContext:"></a>
+	<h3 class="subsubtitle method-title">MR_setDefaultContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (NSManagedObjectContext *)MR_rootSavingContext</code></div>
+	<div class="method-subsection method-declaration"><code>+ (void)MR_setDefaultContext:(NSManagedObjectContext *)<em>moc</em></code></div>
 
     
 </div>
@@ -350,12 +473,100 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_description" title="MR_description"></a>
-	<h3 class="subsubtitle method-title">MR_description</h3>
+	<a name="//api/name/MR_observeContext:" title="MR_observeContext:"></a>
+	<h3 class="subsubtitle method-title">MR_observeContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (NSString *)MR_description</code></div>
+	<div class="method-subsection method-declaration"><code>- (void)MR_observeContext:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_observeContextOnMainThread:" title="MR_observeContextOnMainThread:"></a>
+	<h3 class="subsubtitle method-title">MR_observeContextOnMainThread:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)MR_observeContextOnMainThread:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_observeiCloudChangesInCoordinator:" title="MR_observeiCloudChangesInCoordinator:"></a>
+	<h3 class="subsubtitle method-title">MR_observeiCloudChangesInCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)MR_observeiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_save" title="MR_save"></a>
+	<h3 class="subsubtitle method-title">MR_save</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)MR_save</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_saveOnBackgroundThread" title="MR_saveOnBackgroundThread"></a>
+	<h3 class="subsubtitle method-title">MR_saveOnBackgroundThread</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)MR_saveOnBackgroundThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_saveOnMainThread" title="MR_saveOnMainThread"></a>
+	<h3 class="subsubtitle method-title">MR_saveOnMainThread</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)MR_saveOnMainThread</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_saveWithErrorHandler:" title="MR_saveWithErrorHandler:"></a>
+	<h3 class="subsubtitle method-title">MR_saveWithErrorHandler:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)MR_saveWithErrorHandler:(void ( ^ ) ( NSError *))<em>errorCallback</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_stopObservingContext:" title="MR_stopObservingContext:"></a>
+	<h3 class="subsubtitle method-title">MR_stopObservingContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)MR_stopObservingContext:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_stopObservingiCloudChangesInCoordinator:" title="MR_stopObservingiCloudChangesInCoordinator:"></a>
+	<h3 class="subsubtitle method-title">MR_stopObservingiCloudChangesInCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)MR_stopObservingiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)<em>coordinator</em></code></div>
 
     
 </div>
@@ -373,7 +584,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-05)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-06)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

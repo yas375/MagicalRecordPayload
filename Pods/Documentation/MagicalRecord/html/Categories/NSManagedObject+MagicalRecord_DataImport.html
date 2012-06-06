@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 1.8.3 </a></h1>
 				<a id="developerHome" href="../index.html">Saul Mora</a>
 			</div>
 			
@@ -44,16 +44,22 @@
 	
 	<option value="//api/name/MR_importFromArray:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_importFromArray:inContext:</option>
 	
-	<option value="//api/name/MR_importFromObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_importFromObject:</option>
+	<option value="//api/name/MR_importFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_importFromDictionary:</option>
 	
-	<option value="//api/name/MR_importFromObject:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_importFromObject:inContext:</option>
+	<option value="//api/name/MR_importFromDictionary:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_importFromDictionary:inContext:</option>
+	
+	<option value="//api/name/MR_updateFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_updateFromDictionary:</option>
+	
+	<option value="//api/name/MR_updateFromDictionary:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ MR_updateFromDictionary:inContext:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/MR_importValuesForKeysWithObject:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_importValuesForKeysWithObject:</option>
+	<option value="//api/name/MR_importValuesForKeysWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_importValuesForKeysWithDictionary:</option>
+	
+	<option value="//api/name/MR_updateValuesForKeysWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- MR_updateValuesForKeysWithDictionary:</option>
 	
 	
 	
@@ -83,9 +89,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importFromArray:inContext:">MR_importFromArray:inContext:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importFromObject:">MR_importFromObject:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importFromDictionary:">MR_importFromDictionary:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importFromObject:inContext:">MR_importFromObject:inContext:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importFromDictionary:inContext:">MR_importFromDictionary:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_updateFromDictionary:">MR_updateFromDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_updateFromDictionary:inContext:">MR_updateFromDictionary:inContext:</a></span></li>
 	
 </ul></li>
 
@@ -93,7 +103,9 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importValuesForKeysWithObject:">MR_importValuesForKeysWithObject:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_importValuesForKeysWithDictionary:">MR_importValuesForKeysWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MR_updateValuesForKeysWithDictionary:">MR_updateValuesForKeysWithDictionary:</a></span></li>
 	
 </ul></li>
 
@@ -139,21 +151,28 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_importValuesForKeysWithObject:">&ndash;&nbsp;MR_importValuesForKeysWithObject:</a></code>
+		<code><a href="#//api/name/MR_importValuesForKeysWithDictionary:">&ndash;&nbsp;MR_importValuesForKeysWithDictionary:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_importFromObject:">+&nbsp;MR_importFromObject:</a></code>
+		<code><a href="#//api/name/MR_updateValuesForKeysWithDictionary:">&ndash;&nbsp;MR_updateValuesForKeysWithDictionary:</a></code>
 		
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/MR_importFromObject:inContext:">+&nbsp;MR_importFromObject:inContext:</a></code>
+		<code><a href="#//api/name/MR_importFromDictionary:">+&nbsp;MR_importFromDictionary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_importFromDictionary:inContext:">+&nbsp;MR_importFromDictionary:inContext:</a></code>
 		
 	</span>
 	
@@ -168,6 +187,20 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/MR_importFromArray:inContext:">+&nbsp;MR_importFromArray:inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_updateFromDictionary:">+&nbsp;MR_updateFromDictionary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MR_updateFromDictionary:inContext:">+&nbsp;MR_updateFromDictionary:inContext:</a></code>
 		
 	</span>
 	
@@ -210,23 +243,45 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_importFromObject:" title="MR_importFromObject:"></a>
-	<h3 class="subsubtitle method-title">MR_importFromObject:</h3>
+	<a name="//api/name/MR_importFromDictionary:" title="MR_importFromDictionary:"></a>
+	<h3 class="subsubtitle method-title">MR_importFromDictionary:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (id)MR_importFromObject:(id)<em>data</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)MR_importFromDictionary:(id)<em>data</em></code></div>
 
     
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_importFromObject:inContext:" title="MR_importFromObject:inContext:"></a>
-	<h3 class="subsubtitle method-title">MR_importFromObject:inContext:</h3>
+	<a name="//api/name/MR_importFromDictionary:inContext:" title="MR_importFromDictionary:inContext:"></a>
+	<h3 class="subsubtitle method-title">MR_importFromDictionary:inContext:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>+ (id)MR_importFromObject:(id)<em>data</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)MR_importFromDictionary:(id)<em>data</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_updateFromDictionary:" title="MR_updateFromDictionary:"></a>
+	<h3 class="subsubtitle method-title">MR_updateFromDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)MR_updateFromDictionary:(id)<em>objectData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_updateFromDictionary:inContext:" title="MR_updateFromDictionary:inContext:"></a>
+	<h3 class="subsubtitle method-title">MR_updateFromDictionary:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)MR_updateFromDictionary:(id)<em>objectData</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
 
     
 </div>
@@ -240,12 +295,23 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/MR_importValuesForKeysWithObject:" title="MR_importValuesForKeysWithObject:"></a>
-	<h3 class="subsubtitle method-title">MR_importValuesForKeysWithObject:</h3>
+	<a name="//api/name/MR_importValuesForKeysWithDictionary:" title="MR_importValuesForKeysWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">MR_importValuesForKeysWithDictionary:</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>- (BOOL)MR_importValuesForKeysWithObject:(id)<em>objectData</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)MR_importValuesForKeysWithDictionary:(id)<em>objectData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MR_updateValuesForKeysWithDictionary:" title="MR_updateValuesForKeysWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">MR_updateValuesForKeysWithDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)MR_updateValuesForKeysWithDictionary:(id)<em>objectData</em></code></div>
 
     
 </div>
@@ -263,7 +329,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-05)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-06-06)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
