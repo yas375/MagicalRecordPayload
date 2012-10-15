@@ -1,5 +1,11 @@
+
 PODS:
-  - MagicalRecord (2.0.3)
+- MagicalRecord (HEAD based on 2.0.6)
 
 DEPENDENCIES:
-  - MagicalRecord (= 2.0.3)
+- MagicalRecord (HEAD)
+
+SPEC CHECKSUMS:
+  MagicalRecord: 85329c97963b5ece0720c4d83ad95698cc36be48
+
+COCOAPODS: 0.15.1

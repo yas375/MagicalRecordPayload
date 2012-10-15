@@ -46,7 +46,7 @@
     NSManagedObjectContext *context = [NSManagedObjectContext defaultContext];
     Photo *photo = [Photo createInContext:context];
     photo.title = title;
-    [context save];
+    [context saveNestedContexts];
     return photo;
 }
 
@@ -54,13 +54,13 @@
     NSManagedObjectContext *context = [NSManagedObjectContext defaultContext];
     PhotoCategory *category = [PhotoCategory createInContext:context];
     category.title = title;
-    [context save];
+    [context saveNestedContexts];
     return category;
 }
 
 - (void)addPhoto:(Photo *)photo toCategory:(PhotoCategory *)category {
     [category addPhotosObject:photo];
-    [[NSManagedObjectContext defaultContext] save];
+    [[NSManagedObjectContext defaultContext] saveNestedContexts];
 }
 
 @end
